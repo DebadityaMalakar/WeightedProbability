@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slot Machine Spinner</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="flex flex-col items-center p-10 space-y-4">
+  <div class="flex justify-end w-full">
+    <button onclick="toggleDarkMode()" id="toggleModeButton" class="px-4 py-2 rounded">Toggle Dark/Light Mode</button>
+  </div>
+
+  <h1 class="text-2xl font-bold">Weighted Probability Slot Machine</h1>
+
+  <div class="space-y-2">
+    <input type="text" id="eventName" placeholder="Event Name" class="border p-2 rounded">
+    <input type="number" id="eventProbability" placeholder="Event Probability (%)" class="border p-2 rounded">
+    <button onclick="addEvent()" class="bg-blue-500 text-white px-4 py-2 rounded">Add Event</button>
+    <button onclick="resetData()" class="bg-red-500 text-white px-4 py-2 rounded">Reset</button>
+  </div>
+
+  <ul id="eventList" class="space-y-1 list-disc text-left"></ul>
+  <p id="totalProbability" class="text-red-500"></p>
+
+  <button onclick="spinSlot()" id="spinButton" class="bg-green-500 text-white px-4 py-2 rounded mt-2">Spin the Slot Machine</button>
+
+  <p id="timer" class="text-lg font-semibold mt-5"></p>
+  <div id="slotDisplay" class="text-5xl font-bold mt-5"></div>
+
+  <p id="result" class="mt-5 text-lg font-semibold"></p>
+
+  <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@import url("https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
+
+body.light-mode {
+  background-color: #f7fafc;
+  color: #1a202c;
+}
+
+body.dark-mode {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+#toggleModeButton {
+  margin-bottom: 20px;
+}
+
+#slotDisplay {
+  width: 20rem;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  border: 2px solid #ddd;
+  border-radius: 0.5rem;
+  background-color: #f7fafc;
+}
+
+body.dark-mode #slotDisplay {
+  background-color: #2d3748;
+  border-color: #4a5568;
+}
